@@ -1,0 +1,107 @@
+<!--
+  Arquivo: contato.html
+  Projeto: AutoVia Veículos - Projeto Front-End para Web
+  Página: Contato
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - AutoVia Veículos</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header id="topo">
+        <nav class="navbar navbar-expand-lg navbar-dark container">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="AutoVia Veículos" height="40"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu-principal">
+                <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="estoque.html">Estoque</a></li>
+                        <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                        <li class="nav-item"><a class="nav-link" href="midia.html">Mídia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="comparativo.html">Comparativo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="financiamento.html">Financiamento</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cadastro.html">Test Drive</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://veiculos.fipe.org.br" target="_blank">Tabela FIPE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.detran.pr.gov.br" target="_blank">Detran-PR</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="titulo-secao">Fale conosco</h1>
+        <div class="row">
+            <div class="col-lg-7">
+                <div id="alerta-contato" class="alert alert-success" style="display: none;"></div>
+                <form id="form-contato" class="card p-4">
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome completo</label>
+                        <input type="text" id="nome" class="form-control" placeholder="Digite seu nome" required minlength="3">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" id="email" class="form-control" placeholder="voce@exemplo.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefone" class="form-label">Telefone</label>
+                        <input type="text" id="telefone" class="form-control" placeholder="41999991234" pattern="[0-9]{11}" required>
+                        <div class="form-text">Somente números, com DDD (11 dígitos)</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="assunto" class="form-label">Assunto</label>
+                        <select id="assunto" class="form-select" required>
+                            <option value="">Selecione...</option>
+                            <option>Dúvida sobre um carro</option>
+                            <option>Financiamento</option>
+                            <option>Avaliação do meu usado</option>
+                            <option>Outro</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensagem" class="form-label">Mensagem</label>
+                        <textarea id="mensagem" class="form-control" rows="4" placeholder="Escreva sua mensagem" required minlength="10"></textarea>
+                    </div>
+                    <input type="submit" class="btn btn-danger" value="Enviar mensagem">
+                </form>
+            </div>
+            <div class="col-lg-5">
+                <div class="card p-4">
+                    <h3>Nossa loja</h3>
+                    <address>
+                        Rua das Oficinas, 123<br>
+                        Curitiba - PR, 80000-000<br>
+                        Telefone: (41) 3333-4444<br>
+                        E-mail: contato@autovia.com.br
+                    </address>
+                    <p class="mb-0">Último contato enviado neste navegador: <strong id="ultimo-contato">nenhum</strong></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="rodape">
+        <div class="container rodape-conteudo">
+            <p class="mb-0">&copy; <span id="ano"></span> AutoVia Veículos - Rua das Oficinas, 123 - Curitiba/PR</p>
+            <p class="mb-0">
+                <a href="contato.html">Fale conosco</a> |
+                <a href="https://www.w3schools.com/" target="_blank">W3Schools</a> |
+                <a href="https://developer.mozilla.org/pt-BR/" target="_blank">MDN</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/contato.js"></script>
+</body>
+</html>

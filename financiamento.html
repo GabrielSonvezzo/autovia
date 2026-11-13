@@ -1,0 +1,96 @@
+<!--
+  Arquivo: financiamento.html
+  Projeto: AutoVia Veículos - Projeto Front-End para Web
+  Página: Financiamento
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financiamento - AutoVia Veículos</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header id="topo">
+        <nav class="navbar navbar-expand-lg navbar-dark container">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="AutoVia Veículos" height="40"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu-principal">
+                <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="estoque.html">Estoque</a></li>
+                        <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                        <li class="nav-item"><a class="nav-link" href="midia.html">Mídia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="comparativo.html">Comparativo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="financiamento.html">Financiamento</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cadastro.html">Test Drive</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://veiculos.fipe.org.br" target="_blank">Tabela FIPE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.detran.pr.gov.br" target="_blank">Detran-PR</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="titulo-secao">Simulador de financiamento</h1>
+        <div class="row">
+            <div class="col-lg-6">
+                <form id="form-simulador" class="card p-4">
+                    <div class="mb-3">
+                        <label for="carro" class="form-label">Veículo</label>
+                        <select id="carro" class="form-select">
+                            <option value="68900">Vortex Hatch - R$ 68.900,00</option>
+                            <option value="98500">Lumen Sedan - R$ 98.500,00</option>
+                            <option value="115000">Terra SUV - R$ 115.000,00</option>
+                            <option value="142000">Atlas Pickup - R$ 142.000,00</option>
+                            <option value="79900">Nimbus Hatch - R$ 79.900,00</option>
+                            <option value="62000">Solaris Sedan - R$ 62.000,00</option>
+                            <option value="139000">Orion SUV - R$ 139.000,00</option>
+                            <option value="168000">Titan Pickup - R$ 168.000,00</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="entrada" class="form-label">Valor de entrada (R$)</label>
+                        <input type="number" id="entrada" class="form-control" min="0" value="10000" required placeholder="Ex.: 10000">
+                    </div>
+                    <div class="mb-3">
+                        <label for="parcelas" class="form-label">Número de parcelas</label>
+                        <select id="parcelas" class="form-select">
+                            <option value="12">12x</option>
+                            <option value="24">24x</option>
+                            <option value="36" selected>36x</option>
+                            <option value="48">48x</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-danger w-100">Calcular</button>
+                </form>
+            </div>
+            <div class="col-lg-6">
+                <div id="resultado" class="alert alert-secondary">Preencha os dados e clique em Calcular. Juros de 1,5% ao mês.</div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="rodape">
+        <div class="container rodape-conteudo">
+            <p class="mb-0">&copy; <span id="ano"></span> AutoVia Veículos - Rua das Oficinas, 123 - Curitiba/PR</p>
+            <p class="mb-0">
+                <a href="contato.html">Fale conosco</a> |
+                <a href="https://www.w3schools.com/" target="_blank">W3Schools</a> |
+                <a href="https://developer.mozilla.org/pt-BR/" target="_blank">MDN</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/financiamento.js"></script>
+</body>
+</html>

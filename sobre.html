@@ -1,0 +1,93 @@
+<!--
+  Arquivo: sobre.html
+  Projeto: AutoVia Veículos - Projeto Front-End para Web
+  Página: Sobre
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - AutoVia Veículos</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <style>
+        .missao {
+            font-style: italic;
+            color: #1b2a4a;
+            border-left: 4px solid #ffd166;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header id="topo">
+        <nav class="navbar navbar-expand-lg navbar-dark container">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="AutoVia Veículos" height="40"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu-principal">
+                <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="estoque.html">Estoque</a></li>
+                        <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                        <li class="nav-item"><a class="nav-link" href="midia.html">Mídia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="comparativo.html">Comparativo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="financiamento.html">Financiamento</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cadastro.html">Test Drive</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://veiculos.fipe.org.br" target="_blank">Tabela FIPE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.detran.pr.gov.br" target="_blank">Detran-PR</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="titulo-secao">Sobre a AutoVia</h1>
+        <article class="caixa-flex">
+            <div>
+                <p>A AutoVia Veículos nasceu em 2010 em Curitiba com um objetivo simples: vender carros seminovos com transparência. Começamos com um pequeno pátio de 10 carros e hoje temos mais de 80 veículos em estoque.</p>
+                <p>Nossa equipe é formada por consultores de vendas, mecânicos e analistas de crédito que acompanham o cliente do primeiro contato até a entrega das chaves.</p>
+                <p class="missao">Missão: facilitar a compra do carro certo, pelo preço justo.</p>
+            </div>
+            <div>
+                <img src="img/banner.jpg" class="img-fluid rounded" alt="Pátio da AutoVia">
+            </div>
+        </article>
+
+        <h2 class="titulo-secao">Nossos números</h2>
+        <div class="row text-center">
+            <div class="col-6 col-md-3 mb-3"><div class="card p-3"><h3>14</h3><p class="mb-0">anos de mercado</p></div></div>
+            <div class="col-6 col-md-3 mb-3"><div class="card p-3"><h3>+3.000</h3><p class="mb-0">carros vendidos</p></div></div>
+            <div class="col-6 col-md-3 mb-3"><div class="card p-3"><h3>80</h3><p class="mb-0">veículos em estoque</p></div></div>
+            <div class="col-6 col-md-3 mb-3"><div class="card p-3"><h3>4,8</h3><p class="mb-0">nota dos clientes</p></div></div>
+        </div>
+
+        <h2 class="titulo-secao">Horário de atendimento</h2>
+        <ul class="list-group">
+            <li class="list-group-item">Segunda a sexta: 8h às 18h</li>
+            <li class="list-group-item">Sábado: 9h às 14h</li>
+            <li class="list-group-item">Domingo: fechado</li>
+        </ul>
+    </main>
+
+    <footer id="rodape">
+        <div class="container rodape-conteudo">
+            <p class="mb-0">&copy; <span id="ano"></span> AutoVia Veículos - Rua das Oficinas, 123 - Curitiba/PR</p>
+            <p class="mb-0">
+                <a href="contato.html">Fale conosco</a> |
+                <a href="https://www.w3schools.com/" target="_blank">W3Schools</a> |
+                <a href="https://developer.mozilla.org/pt-BR/" target="_blank">MDN</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

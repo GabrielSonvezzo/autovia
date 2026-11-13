@@ -1,0 +1,129 @@
+<!--
+  Arquivo: index.html
+  Projeto: AutoVia Veículos - Projeto Front-End para Web
+  Página: Início
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início - AutoVia Veículos</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <style>
+        #garantia {
+            color: #2a9d8f;
+        }
+    </style>
+</head>
+<body>
+    <header id="topo">
+        <nav class="navbar navbar-expand-lg navbar-dark container">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="AutoVia Veículos" height="40"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu-principal">
+                <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="estoque.html">Estoque</a></li>
+                        <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                        <li class="nav-item"><a class="nav-link" href="midia.html">Mídia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="comparativo.html">Comparativo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="financiamento.html">Financiamento</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cadastro.html">Test Drive</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://veiculos.fipe.org.br" target="_blank">Tabela FIPE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.detran.pr.gov.br" target="_blank">Detran-PR</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="banner">
+            <div class="banner-texto">
+                <h1>Seu próximo carro está aqui</h1>
+                <p>Hatches, sedans, SUVs e pickups revisados e com garantia.</p>
+                <a href="estoque.html" class="btn btn-danger btn-lg">Ver estoque</a>
+                <a href="cadastro.html" class="btn btn-outline-light btn-lg">Agendar test drive</a>
+            </div>
+        </section>
+
+        <div class="alert alert-warning mt-4" role="alert">
+            <strong>Promoção de novembro:</strong> taxa de 1,5% ao mês em até 48 parcelas. <a href="financiamento.html" class="alert-link">Simule agora</a>.
+        </div>
+
+        <h2 class="titulo-secao">Destaques da semana</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card card-carro h-100">
+                    <img src="img/nimbus-hatch.jpg" class="card-img-top" alt="Nimbus Hatch">
+                    <div class="card-body">
+                        <h5 class="card-title">Nimbus Hatch 2024</h5>
+                        <p class="card-text">Apenas 5.000 km, câmbio automático e economia no dia a dia.</p>
+                        <p class="preco">R$ 79.900,00</p>
+                        <a href="estoque.html" class="btn btn-primary">Ver detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card card-carro h-100">
+                    <img src="img/orion-suv.jpg" class="card-img-top" alt="Orion SUV">
+                    <div class="card-body">
+                        <h5 class="card-title">Orion SUV 2023</h5>
+                        <p class="card-text">Motor híbrido, espaço para a família e tecnologia embarcada.</p>
+                        <p class="preco">R$ 139.000,00</p>
+                        <a href="estoque.html" class="btn btn-primary">Ver detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card card-carro h-100">
+                    <img src="img/titan-pickup.jpg" class="card-img-top" alt="Titan Pickup">
+                    <div class="card-body">
+                        <h5 class="card-title">Titan Pickup 2022</h5>
+                        <p class="card-text">Diesel, tração 4x4 e caçamba pronta para o trabalho pesado.</p>
+                        <p class="preco">R$ 168.000,00</p>
+                        <a href="estoque.html" class="btn btn-primary">Ver detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="titulo-secao">Por que comprar na AutoVia?</h2>
+        <div class="caixa-flex">
+            <div>
+                <h3 id="garantia">Garantia de 1 ano</h3>
+                <p>Todos os veículos passam por revisão de 120 itens antes de entrar no estoque.</p>
+            </div>
+            <div>
+                <h3>Financiamento facilitado</h3>
+                <p>Aprovação rápida com as principais instituições financeiras do país.</p>
+            </div>
+            <div>
+                <h3>Troca com troco</h3>
+                <p style="color: #e63946; font-weight: bold;">Avaliamos o seu usado na hora e pagamos a diferença.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer id="rodape">
+        <div class="container rodape-conteudo">
+            <p class="mb-0">&copy; <span id="ano"></span> AutoVia Veículos - Rua das Oficinas, 123 - Curitiba/PR</p>
+            <p class="mb-0">
+                <a href="contato.html">Fale conosco</a> |
+                <a href="https://www.w3schools.com/" target="_blank">W3Schools</a> |
+                <a href="https://developer.mozilla.org/pt-BR/" target="_blank">MDN</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

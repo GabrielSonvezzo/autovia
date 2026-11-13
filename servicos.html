@@ -1,0 +1,95 @@
+<!--
+  Arquivo: servicos.html
+  Projeto: AutoVia Veículos - Projeto Front-End para Web
+  Página: Serviços
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços - AutoVia Veículos</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header id="topo">
+        <nav class="navbar navbar-expand-lg navbar-dark container">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="AutoVia Veículos" height="40"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu-principal">
+                <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="estoque.html">Estoque</a></li>
+                        <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                        <li class="nav-item"><a class="nav-link" href="midia.html">Mídia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="comparativo.html">Comparativo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="financiamento.html">Financiamento</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cadastro.html">Test Drive</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://veiculos.fipe.org.br" target="_blank">Tabela FIPE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.detran.pr.gov.br" target="_blank">Detran-PR</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="titulo-secao">Nossos serviços</h1>
+        <p>Além da venda de veículos, a AutoVia oferece tudo o que você precisa para sair rodando com tranquilidade.</p>
+        <section class="grade-servicos">
+            <article class="card">
+                <img src="img/servico-revisao.jpg" class="card-img-top" alt="Revisão">
+                <div class="card-body">
+                    <h5 class="card-title">Revisão e garantia</h5>
+                    <p class="card-text">Checklist de 120 itens, troca de óleo e filtros e garantia de 1 ano de motor e câmbio.</p>
+                    <a href="contato.html" class="btn btn-outline-primary">Saiba mais</a>
+                </div>
+            </article>
+            <article class="card">
+                <img src="img/servico-financiamento.jpg" class="card-img-top" alt="Financiamento">
+                <div class="card-body">
+                    <h5 class="card-title">Financiamento</h5>
+                    <p class="card-text">Simule em segundos e aprove o crédito com os melhores bancos do mercado.</p>
+                    <a href="financiamento.html" class="btn btn-outline-primary">Simular</a>
+                </div>
+            </article>
+            <article class="card">
+                <img src="img/servico-seguro.jpg" class="card-img-top" alt="Seguro">
+                <div class="card-body">
+                    <h5 class="card-title">Seguro e documentação</h5>
+                    <p class="card-text">Cuidamos da transferência, do emplacamento e da cotação do seguro para você.</p>
+                    <a href="contato.html" class="btn btn-outline-primary">Pedir cotação</a>
+                </div>
+            </article>
+        </section>
+
+        <h2 class="titulo-secao">Como funciona a compra</h2>
+        <ol class="list-group list-group-numbered">
+            <li class="list-group-item">Escolha o carro no estoque ou na galeria.</li>
+            <li class="list-group-item">Agende um test drive pelo site.</li>
+            <li class="list-group-item">Simule o financiamento ou avalie seu usado na troca.</li>
+            <li class="list-group-item">Assine a documentação e retire o carro revisado.</li>
+        </ol>
+    </main>
+
+    <footer id="rodape">
+        <div class="container rodape-conteudo">
+            <p class="mb-0">&copy; <span id="ano"></span> AutoVia Veículos - Rua das Oficinas, 123 - Curitiba/PR</p>
+            <p class="mb-0">
+                <a href="contato.html">Fale conosco</a> |
+                <a href="https://www.w3schools.com/" target="_blank">W3Schools</a> |
+                <a href="https://developer.mozilla.org/pt-BR/" target="_blank">MDN</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

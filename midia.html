@@ -1,0 +1,69 @@
+<!--
+  Arquivo: midia.html
+  Projeto: AutoVia Veículos - Projeto Front-End para Web
+  Página: Mídia (feita com HTML, CSS e JavaScript puros, sem Bootstrap)
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídia - AutoVia Veículos</title>
+    <link rel="stylesheet" href="css/puro.css">
+</head>
+<body>
+    <header>
+        <nav class="barra">
+            <a href="index.html"><img src="img/logo.png" alt="AutoVia Veículos"></a>
+            <button id="botao-menu" type="button">&#9776;</button>
+            <ul id="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="estoque.html">Estoque</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="midia.html">Mídia</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="comparativo.html">Comparativo</a></li>
+                <li><a href="financiamento.html">Financiamento</a></li>
+                <li><a href="cadastro.html">Test Drive</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="https://veiculos.fipe.org.br" target="_blank">Tabela FIPE</a></li>
+                <li><a href="https://www.detran.pr.gov.br" target="_blank">Detran-PR</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Vídeo e áudio</h1>
+        <p>Conheça a AutoVia em vídeo e ouça o ronco do motor da Titan Pickup.</p>
+        <section class="midia">
+            <article>
+                <h2>Apresentação da loja</h2>
+                <video id="video" controls poster="img/banner.jpg">
+                    <source src="video/apresentacao.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeo HTML5.
+                </video>
+                <button id="botao-video" class="botao" type="button">Reproduzir vídeo</button>
+            </article>
+            <article>
+                <h2>Som do motor</h2>
+                <audio id="audio" controls>
+                    <source src="audio/motor.mp3" type="audio/mpeg">
+                    Seu navegador não suporta áudio HTML5.
+                </audio>
+                <button id="botao-audio" class="botao" type="button">Ouvir som do motor</button>
+                <p>Gravação feita no pátio da loja durante a revisão de entrega.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="ano"></span> AutoVia Veículos - Rua das Oficinas, 123 - Curitiba/PR</p>
+        <p><a href="contato.html">Fale conosco</a> | <a href="https://www.w3schools.com/" target="_blank">W3Schools</a></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/puro.js"></script>
+    <script src="js/midia.js"></script>
+</body>
+</html>

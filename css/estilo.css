@@ -1,0 +1,168 @@
+/*
+  Arquivo: estilo.css
+  Projeto: AutoVia Veículos - Projeto Front-End para Web
+  Descrição: folha de estilo externa compartilhada por todas as páginas
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    color: #222222;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    color: #1b2a4a;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    min-height: 60vh;
+}
+
+#topo {
+    background-color: #1b2a4a;
+}
+
+#topo .nav-link {
+    color: #ffffff;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+#topo .nav-link:hover {
+    color: #ffd166;
+    background-color: #2c4170;
+    border-radius: 4px;
+}
+
+#rodape {
+    background-color: #1b2a4a;
+    color: #ffffff;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+#rodape a {
+    color: #ffd166;
+}
+
+#rodape a:hover {
+    text-decoration: underline;
+}
+
+.rodape-conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.banner {
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 90px 40px;
+    text-align: left;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.banner-texto {
+    max-width: 55%;
+}
+
+.banner h1 {
+    color: #ffffff;
+    font-size: 2.6rem;
+    text-shadow: 2px 2px 6px #000000;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 4px #000000;
+}
+
+.titulo-secao {
+    border-left: 6px solid #e63946;
+    padding-left: 12px;
+    margin: 40px 0 20px 0;
+}
+
+.card-carro {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-carro:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.preco {
+    color: #e63946;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.grade-servicos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.caixa-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.caixa-flex > div {
+    flex: 1 1 300px;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #1b2a4a;
+    box-shadow: 0 0 0 3px rgba(27, 42, 74, 0.3);
+}
+
+.form-control:hover, .form-select:hover {
+    border-color: #e63946;
+}
+
+.form-control:invalid, .form-select:invalid {
+    border-color: #e63946;
+    background-color: #fff5f5;
+}
+
+.form-control:valid, .form-select:valid {
+    border-color: #2a9d8f;
+}
+
+@media (max-width: 768px) {
+    .banner {
+        padding: 50px 15px;
+        background-position: left center;
+    }
+
+    .banner h1 {
+        font-size: 1.8rem;
+    }
+
+    .banner-texto {
+        max-width: 100%;
+    }
+
+    .grade-servicos {
+        grid-template-columns: 1fr;
+    }
+
+    .rodape-conteudo {
+        flex-direction: column;
+        text-align: center;
+    }
+}
